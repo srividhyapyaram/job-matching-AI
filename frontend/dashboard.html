@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - JobMatch AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="dashboard-page">
+
+<div class="dashboard-wrapper">
+
+    <!-- Top Section -->
+    <div class="dashboard-top">
+        <h2>Welcome to JobMatch AI 👋</h2>
+        <button class="logout-btn" onclick="window.location.href='login.html'">Logout</button>
+    </div>
+
+    <!-- Main Two Box Section -->
+    <div class="dashboard-grid">
+
+        <!-- Personality Box -->
+        <div class="action-card">
+            <h3>🧠 Personality Assessment</h3>
+            <p>
+                Before we recommend careers, we need to understand 
+                your personality traits and strengths.
+            </p>
+            <button class="primary-btn">Start Assessment</button>
+        </div>
+
+        <!-- Chatbot Box -->
+        <div class="action-card chatbot-card">
+            <h3>🤖 AI Career Assistant</h3>
+            <p>
+                Confused about career choices?  
+                Ask our AI assistant anything about skills, jobs, or growth.
+            </p>
+            <button class="secondary-btn">Talk to AI</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

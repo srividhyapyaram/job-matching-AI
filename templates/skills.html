@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Skills - JobMatch AI</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #4e73df, #1cc88a);
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 500px;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #4e73df;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2e59d9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>Enter Your Skills</h2>
+
+        <form action="/result" method="post">
+            <textarea name="skills" placeholder="Example: Python, Machine Learning, SQL" required></textarea>
+            <button type="submit">Get Job Matches</button>
+        </form>
+    </div>
+
+</body>
+</html>
+

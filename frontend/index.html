@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JobMatch AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <div class="logo-icon">🔍</div>
+        <h2>JobMatch AI</h2>
+    </div>
+
+    <nav>
+        <a href="{{ url_for('login') }}">Login</a>
+        <a href="{{ url_for('register') }}" class="nav-btn">Register</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Smart Career Matching Powered by AI</h1>
+    <p>
+        Discover jobs based on your personality, skills, and market demand.
+        Get career insights, salary prediction, and skill gap analysis in one platform.
+    </p>
+    <a href="{{ url_for('login') }}" class="main-btn">Get Started</a>
+</section>
+
+<section class="features">
+    <div class="card">
+        <h3>🧠 Personality Analyzer</h3>
+        <p>Understand your strengths and career alignment.</p>
+    </div>
+
+    <div class="card">
+        <h3>📊 Skill Gap Detection</h3>
+        <p>Know what skills to develop for your dream job.</p>
+    </div>
+
+    <div class="card">
+        <h3>💰 Salary Estimation</h3>
+        <p>Predict your income based on skills & location.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 JobMatch AI | Built with Intelligence 🚀</p>
+</footer>
+
+</body>
+</html>
